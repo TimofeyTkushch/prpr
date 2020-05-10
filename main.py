@@ -125,7 +125,6 @@ def risunok():
     global res
     num = numzn()
     adres = f'img/pic{num}.png'
-    print(adres)
     if res != '':
         return render_template('risunok.html', adres=adres)
     return 'Вы не создавали модель'
