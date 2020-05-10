@@ -1,0 +1,25 @@
+{% extends "base.html" %}
+
+{% block content %}
+<br>
+<p>
+				<a class="btn btn-primary " href="/">Вернуться</a>
+			</p>
+<br>
+{% if current_user.is_authenticated %}
+
+
+<i>Имя; Тип; Проблема; Аргумент 3; Аргумет 4; Аргумент 5; Послание</i><br>
+
+
+         {% for i in model %}
+
+<i>{{i.name  }}; {{i.p1  }}; {{i.p2  }}; {{i.p3  }}; {{i.p4  }}; {{i.p5  }}; {{i.p6  }}</i><br>
+
+         {% endfor %}
+
+
+
+
+{% endif %}
+{% endblock %}

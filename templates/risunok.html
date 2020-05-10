@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<body>
+{% extends "base.html" %}
+
+{% block content %}
+
+{% if current_user.is_authenticated %}
+	
+
+<img src="{{ url_for('static', filename=adres) }}", class="center-img", alt={{adres}}>
+
+<br>
+  <p>
+     <a class="btn btn-primary " href="/teach">Обучить</a>
+  </p>
+<br>
+
+
+{% endif %}
+{% endblock %}
+</body>
+</html>
