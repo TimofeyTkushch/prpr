@@ -81,7 +81,7 @@ class FittingAndEvaluating:
         global num
         num += 1
         plt.scatter(self.X_train[:, 0], self.X_train[:, 1], c=self.Y_train)
-        plt.savefig('static\img\pic.png')
+        plt.savefig(f'static\img\pic{num}.png')
 
 def all_(name, model_type, problem, tree_counts, deep, neighbours, sampless, size='0.2'):
     model = Model(name, model_type, problem, int(tree_counts), int(deep), int(neighbours))
